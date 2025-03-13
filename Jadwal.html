@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Mata Kuliah</title>
+    <style>
+        body {
+            background-image: url('Rumput.JPG');
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding-bottom: 50px;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .nav-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .nav-button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        h1 {
+            margin-top: 100px; /* Menyesuaikan agar tidak tertutup navbar */
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Tambahkan efek bayangan agar lebih jelas */
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 22px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="jadwal.html" class="nav-button">Jadwal</a>
+    </nav>
+
+    <h1>Jadwal Semester 4 Kelas D</h1>
+
+    <table>
+        <tr>
+            <th>Hari</th>
+            <th>Jam</th>
+            <th>Mata Kuliah</th>
+            <th>Ruang</th>
+        </tr>
+        <tr>
+            <td rowspan="5">Senin</td>
+            <td>07:30 - 09:10</td>
+            <td>PDT*</td>
+            <td>GIK C</td>
+        </tr>
+        <tr>
+            <td>09:15 - 10:55</td>
+            <td>WEB</td>
+            <td>GIK C</td>
+        </tr>
+        <tr>
+            <td>11:00 - 12:40</td>
+            <td>ADSI</td>
+            <td>GIK L2</td>
+        </tr>
+        <tr>
+            <td>13:55 - 15:35</td>
+            <td>AI</td>
+            <td>GIK L2</td>
+        </tr>
+        <tr>
+            <td>15:50 - 17:30</td>
+            <td>AI</td>
+            <td>GIK A</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Selasa</td>
+            <td>09:15 - 10:55</td>
+            <td>PEMDEK*</td>
+            <td>GIK C</td>
+        </tr>
+        <tr>
+            <td>13:55 - 15:35</td>
+            <td>MAPEN*</td>
+            <td>GIK L2</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Rabu</td>
+            <td>07:30 - 09:10</td>
+            <td>IOT*</td>
+            <td>LAB R1&R2</td>
+        </tr>
+        <tr>
+            <td>09:15 - 10:55</td>
+            <td>ML</td>
+            <td>GIK C</td>
+        </tr>
+        <tr>
+            <td>15:50 - 17:30</td>
+            <td>PEMDEK*</td>
+            <td>LAB R1&R2</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Kamis</td>
+            <td>09:15 - 10:55</td>
+            <td>TAM</td>
+            <td>LAB R3&R4</td>
+        </tr>
+        <tr>
+            <td>13:55 - 15:35</td>
+            <td>WEB</td>
+            <td>LAB R1&R2</td>
+        </tr>
+        <tr>
+            <td>15:50 - 17:30</td>
+            <td>TI</td>
+            <td>GIK C</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Jumat</td>
+            <td>07:30 - 09:10</td>
+            <td>ADSI</td>
+            <td>MIPAT A</td>
+        </tr>
+        <tr>
+            <td>09:15 - 10:55</td>
+            <td>IOT*</td>
+            <td>GIK C</td>
+        </tr>
+        <tr>
+            <td>15:50 - 17:30</td>
+            <td>TAM</td>
+            <td>GIK L2</td>
+        </tr>
+    </table>
+    <button class="button" onclick="window.location.href='index.html'">Kembali ke Profil</button>
+
+    <footer>
+        &copy; 2025 Arjuna Gunatama Sihombing | Universitas Lampung
+    </footer>
+</body>
+</html>
